@@ -21,7 +21,7 @@ public class GuessGame {            // GuessGame содержит three пере
         int targetNumber = (int) (Math.random() * 10);  // Create the number, которое игроки должны guess
         System.out.println("Я загадываю число от 0 до 9...");
 
-        while (true) {
+        while (p1isRight==false && p2isRight == false && p3isRight == false) {
             System.out.println("Число, которое нужно угадать, - " + targetNumber);
 
             p1.guess();             // Вызываем метод guess() из каждого объекта Player
@@ -47,12 +47,16 @@ public class GuessGame {            // GuessGame содержит three пере
                 p3isRight = true;
             }
 
-            if (p1isRight || p2isRight || p3isRight){   // If кто то из игроков угадал, то.. (оператор || означает ИЛИ)
-
+            if (p1isRight) {
                 System.out.println("У нас есть победитель");
-                System.out.println("Первый игрок угадал?" + p1isRight);
-                System.out.println("Первый игрок угадал?" + p2isRight);
-                System.out.println("Первый игрок угадал?" + p3isRight);
+                System.out.println("Первый игрок угадал! это: " + targetNumber);}
+            if (p2isRight) {
+                System.out.println("У нас есть победитель");
+                System.out.println("Второй игрок угадал! это: " + targetNumber);}
+
+            if (p3isRight){
+                System.out.println("У нас есть победитель");
+                System.out.println("Третий игрок угадал! это: " + targetNumber);
             }
             else {
                 System.out.println("Игроки должны попробовать еще раз");
