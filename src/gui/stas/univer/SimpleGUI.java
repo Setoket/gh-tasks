@@ -7,7 +7,7 @@ import  javax.swing.*;
 public class SimpleGUI extends JFrame {
     private float x;
     private float y;
-    String message = "";
+    String message;
     private  JButton button = new JButton("Press");
     private  JTextField inputX = new JTextField();
     private  JTextField inputY = new JTextField();
@@ -21,7 +21,7 @@ public class SimpleGUI extends JFrame {
         this.setBounds(200, 200, 400, 200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        Container container = this.getContentPane();
+        Container container = this.getContentPane(); // Дефолтный код, выделяет область в JFrame
         container.setLayout(new GridLayout(4, 2,2,2));//размеченая панель из 4 строк и 2 столбцов
         container.add(labelX);//1я ячейка 1й строки
         container.add(inputX);//2я ячейка 1й строки
@@ -37,7 +37,7 @@ public class SimpleGUI extends JFrame {
     //Добавляем listener (обработчик действий) для кнопки button
     class ButtonEventListener implements ActionListener {
             public void actionPerformed (ActionEvent e) {
-               x=Float.parseFloat(inputX.getText());
+               x=Float.parseFloat(inputX.getText()); // Конвертер в Float. Далее ввод данных с клавиатуры в поля
                y=Float.parseFloat(inputY.getText());
 
                 if (y >= x && y <= 1 && x >= -1 || y >= -x && y <= 1 && x <= 1){

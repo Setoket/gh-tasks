@@ -1,5 +1,6 @@
 package Lab.Rab;
-
+// Ярошенко С.Л. 173-331
+// Лабораторная №2 Вариант 8 (Попадание точки в заштрихованную область)
 import java.util.Scanner;
 
 public class Lab2v1v8 {
