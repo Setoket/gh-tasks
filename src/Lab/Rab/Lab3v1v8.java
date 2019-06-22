@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // Ярошенко С.Л. 173-331
-// Лабораторная №2 Вариант 8 (Упорядочить массив)
+// Лабораторная №2 Вариант 8 (Сортировка, сумма, произведение)
 public class Lab3v1v8 {
     public static void main(String[] agrs) {
         Scanner in = new Scanner(System.in);
