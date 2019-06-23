@@ -10,7 +10,7 @@ public class Lab2v1v8 {
         double x = in.nextDouble();
         System.out.println("Enter Y ");
         double y = in.nextDouble();
-        System.out.println("Точка для проверки " + "(" + x + ";" + y + ")" + "\n" + "...");
+        System.out.println("Точка для проверки (" + x + ";" + y + ")" + "\n" + "...");
 
         if (y >= x && y <= 1 && x >= -1 || y >= -x && y <= 1 && x <= 1){
             System.out.println("Точка попадает в область");

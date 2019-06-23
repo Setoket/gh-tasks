@@ -48,9 +48,7 @@ public class SimpleGUI extends JFrame {
                 }
                 labelResult2.setText(message);
                 labelResult.setText(" Point for calculate:"+"("+x+";"+y+")");
-
             }
         }
-
 }
 
