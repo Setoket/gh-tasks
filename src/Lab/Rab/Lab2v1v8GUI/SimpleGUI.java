@@ -1,4 +1,4 @@
-package gui.stas.univer;
+package Lab.Rab.Lab2v1v8GUI;
 
 import  java.awt.*;
 import  java.awt.event.*;
@@ -7,6 +7,7 @@ import  javax.swing.*;
 public class SimpleGUI extends JFrame {
     private float x;
     private float y;
+
     String message;
     private  JButton button = new JButton("Press");
     private  JTextField inputX = new JTextField();
@@ -16,8 +17,10 @@ public class SimpleGUI extends JFrame {
     private  JLabel labelResult = new JLabel(" Point for calculate:"+"("+x+";"+y+")");
     private  JLabel labelResult2 = new JLabel(message);
 
+
+
     public  SimpleGUI () {
-        super("Laba #2 GUI");
+        super("Laba #2v1 GUI");
         this.setBounds(200, 200, 400, 200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -32,10 +35,12 @@ public class SimpleGUI extends JFrame {
         container.add(button);//1я ячейка 4й строки
 
         button.addActionListener(new ButtonEventListener());
+
+
     }
 
     //Добавляем listener (обработчик действий) для кнопки button
-    class ButtonEventListener implements ActionListener {
+   class ButtonEventListener implements ActionListener {
             public void actionPerformed (ActionEvent e) {
                x=Float.parseFloat(inputX.getText()); // Конвертер в Float. Далее ввод данных с клавиатуры в поля
                y=Float.parseFloat(inputY.getText());

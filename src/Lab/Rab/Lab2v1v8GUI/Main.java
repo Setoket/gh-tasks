@@ -1,4 +1,4 @@
-package gui.stas.univer;
+package Lab.Rab.Lab2v1v8GUI;
 
 public class Main {
     public  static void main(String[] args) {
