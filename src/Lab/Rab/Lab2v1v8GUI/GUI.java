@@ -59,10 +59,12 @@ public class GUI extends JFrame {
             mas[3] = Integer.parseInt(input4.getText());
             mas[4] = Integer.parseInt(input5.getText());
 
-            //for (int i = 0; i < mas.length; i++) {
-            //}
-            //if (mas[mas.length - 1] != 0) {
-            //} else {
+            for (int i = 0; i < mas.length; i++) {
+            }
+            if (mas[mas.length - 1] != 0) {
+                String s = "Концом последовательности должен быть - 0";
+                labelResult2.setText(s);
+            } else {
 
                 //-------------Алгоритм проверки убывания последовательности
                 for (int i = 1; i < mas.length; i++) {
@@ -73,8 +75,9 @@ public class GUI extends JFrame {
                         break;
                     }
                 }
-            labelResult2.setText(Integer.toString(result));
-            //}
+                labelResult2.setText(Integer.toString(result));
+
+            }
         }
     }
 }
