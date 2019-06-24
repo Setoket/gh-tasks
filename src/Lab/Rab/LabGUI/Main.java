@@ -1,4 +1,4 @@
-package Lab.Rab.Lab2v1v8GUI;
+package Lab.Rab.LabGUI;
 
 public class Main {
     public  static void main(String[] args) {

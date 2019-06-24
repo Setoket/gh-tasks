@@ -1,4 +1,4 @@
-package Lab.Rab.Lab2v1v8GUI;
+package Lab.Rab.LabGUI;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,7 +27,7 @@ public class GUI extends JFrame {
 
     public GUI() {
         super("Laba #2v1 GUI");
-        this.setBounds(200, 200, 500, 200);
+        this.setBounds(200, 200, 600, 200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         Container container = this.getContentPane();

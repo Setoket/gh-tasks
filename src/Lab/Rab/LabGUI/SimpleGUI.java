@@ -1,4 +1,4 @@
-package Lab.Rab.Lab2v1v8GUI;
+package Lab.Rab.LabGUI;
 
 import  java.awt.*;
 import  java.awt.event.*;
