@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI extends JFrame {
+public class Lab2v2 extends JFrame {
     private int mas[] = new int[5];
     private int result;
     String message;
@@ -25,7 +25,7 @@ public class GUI extends JFrame {
     private JLabel labelResult = new JLabel(" Код последовательности:" + result);
     private JLabel labelResult2 = new JLabel(message);
 
-    public GUI() {
+    public Lab2v2() {
         super("Laba #2v1 GUI");
         this.setBounds(200, 200, 600, 200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -4,7 +4,7 @@ import  java.awt.*;
 import  java.awt.event.*;
 import  javax.swing.*;
 
-public class SimpleGUI extends JFrame {
+public class Lab2v1 extends JFrame {
     private float x;
     private float y;
 
@@ -19,7 +19,7 @@ public class SimpleGUI extends JFrame {
 
 
 
-    public  SimpleGUI () {
+    public Lab2v1() {
         super("Laba #2v1 GUI");
         this.setBounds(200, 200, 400, 200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
